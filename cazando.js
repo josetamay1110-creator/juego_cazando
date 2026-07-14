@@ -16,11 +16,15 @@ function iniciarJuego(){
     graficarGato();
 }
 function graficarGato(){
-    ctx.fillStyle="black";
-    ctx.fillRect(gatoX,gatoY,ANCHO_GATO,ALTURA_GATO);
+    dibujarRectangulo();
 }
 
 function graficarComida(){
-    ctx.fillStyle="grey";
-    ctx.fillRect(comidaX,comidaY,ANCHO_COMIDA,ALTURA_COMIDA)
+    dibujarRectangulo();
+}
+function dibujarRectangulo(x,y,ancho,alto,color){
+    ctx.fillStyle="black";
+    ctx.fillRect(gatoX,gatoY,ANCHO_GATO,ALTURA_GATO);
+    ctx.fillStyle="red";
+    ctx.fillRect(comidaX,comidaY,ANCHO_COMIDA,ALTURA_COMIDA);
 }
